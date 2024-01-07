@@ -1,17 +1,16 @@
 import fastify, { FastifyReply, FastifyRequest } from 'fastify';
-import { createSchema, createYoga } from 'graphql-yoga';
-import fastifyPrisma from '@joggr/fastify-prisma';
+import { createYoga } from 'graphql-yoga';
+import { context } from './context';
 import { schema } from './schema';
 
 const app = fastify({ logger: true });
-
-app.register(fastifyPrisma);
 
 const yoga = createYoga<{
   req: FastifyRequest;
   reply: FastifyReply;
 }>({
   schema,
+  context,
   logging: {
     debug: (...args) => args.forEach((arg) => app.log.debug(arg)),
     info: (...args) => args.forEach((arg) => app.log.info(arg)),

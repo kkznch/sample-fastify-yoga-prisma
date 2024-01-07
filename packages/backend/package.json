@@ -19,7 +19,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@joggr/fastify-prisma": "^1.2.2",
     "@prisma/client": "5.7.1",
     "fastify": "^4.25.2",
     "graphql": "^16.8.1",
