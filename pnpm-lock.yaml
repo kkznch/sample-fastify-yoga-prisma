@@ -10,6 +10,9 @@ importers:
 
   packages/backend:
     dependencies:
+      '@joggr/fastify-prisma':
+        specifier: ^1.2.2
+        version: 1.2.2(@prisma/client@5.7.1)
       '@prisma/client':
         specifier: 5.7.1
         version: 5.7.1(prisma@5.7.1)
@@ -59,6 +62,15 @@ packages:
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
     dependencies:
       fast-json-stringify: 5.10.0
+    dev: false
+
+  /@joggr/fastify-prisma@1.2.2(@prisma/client@5.7.1):
+    resolution: {integrity: sha512-uCqeqbfQum6mpU7FNZNIBDvdO3beneiuIrs9ItkyDuiKlWOi6Spi2mDphSuFlX/eZz3peZZuiQGVtxWTLhJsog==}
+    peerDependencies:
+      '@prisma/client': 4.x || 5.x
+    dependencies:
+      '@prisma/client': 5.7.1(prisma@5.7.1)
+      fastify-plugin: 4.5.1
     dev: false
 
   /@jridgewell/resolve-uri@3.1.1:
@@ -288,6 +300,10 @@ packages:
 
   /fast-uri@2.3.0:
     resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
+    dev: false
+
+  /fastify-plugin@4.5.1:
+    resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
     dev: false
 
   /fastify@4.25.2:

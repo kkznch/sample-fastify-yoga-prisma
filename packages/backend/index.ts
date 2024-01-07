@@ -1,11 +1,17 @@
 import Fastify from 'fastify';
+import fastifyPrisma from '@joggr/fastify-prisma';
 
 const fastify = Fastify({
   logger: true,
 });
+fastify.register(fastifyPrisma);
 
 fastify.get('/', async (request, reply) => {
   return { hello: 'world' };
+});
+fastify.get('/users', async (request, reply) => {
+  const users = await fastify.prisma.user.findMany();
+  return users;
 });
 
 const start = async () => {
