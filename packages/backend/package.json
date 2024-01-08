@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/server.ts"
+    "dev": "tsx watch src/server.ts"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/node": "^20.10.6",
     "prisma": "^5.7.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
