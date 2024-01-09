@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@pothos/core": "^3.41.0",
     "@prisma/client": "5.7.1",
     "fastify": "^4.25.2",
     "graphql": "^16.8.1",
