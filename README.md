@@ -18,3 +18,8 @@ $ pnpm backend prisma:generate
 ```sh
 $ pnpm backend dev
 ```
+
+## References
+- [Pothos](https://pothos-graphql.dev/)
+- [GraphQL Server Example - graphql](https://github.com/prisma/prisma-examples/tree/latest/typescript/graphql)
+- [sample-graphql-yoga](https://github.com/togana/sample-graphql-yoga/tree/main)
