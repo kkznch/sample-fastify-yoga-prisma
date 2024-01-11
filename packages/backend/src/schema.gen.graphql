@@ -1,0 +1,22 @@
+schema {
+  query: Query
+}
+
+type Post {
+  author: User!
+  content: String
+  favoritedBy: [User!]!
+  id: ID!
+}
+
+type Query {
+  users: [User!]!
+}
+
+type User {
+  email: String!
+  favoritedPosts: [Post!]!
+  id: ID!
+  name: String
+  writtenPosts: [Post!]!
+}

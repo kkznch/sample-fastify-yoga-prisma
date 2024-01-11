@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate",
+    "codegen": "graphql-codegen"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -15,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/schema-ast": "^4.0.0",
     "@types/node": "^20.10.6",
     "prisma": "^5.7.1",
     "tsx": "^4.7.0",
