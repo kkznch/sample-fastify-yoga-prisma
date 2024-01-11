@@ -1,5 +1,10 @@
 schema {
   query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  createPost(input: PostCreateInput!): Post!
 }
 
 type Post {
@@ -7,6 +12,10 @@ type Post {
   content: String
   favoritedBy: [User!]!
   id: ID!
+}
+
+input PostCreateInput {
+  content: String!
 }
 
 type Query {
