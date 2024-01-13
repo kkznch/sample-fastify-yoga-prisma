@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "backend": "pnpm -F \"backend\"",
+    "frontend": "pnpm -F \"frontend\"",
     "validator": "pnpm -F \"validator\""
   },
   "keywords": [],
